@@ -79,7 +79,7 @@ def on_vertical_bias_trackbar(val):
 def create_trackbar():
     cv2.createTrackbar("HeadRoom", "Frame", 50, 100, on_vertical_bias_trackbar)
 
-def apply_cinematic_rules(frame, roi, ref_width_ratio=0.7, headroom_ratio=0, thirds_rule_ratio=0.666):
+def apply_cinematic_rules(frame, roi, ref_width_ratio=0.5, headroom_ratio=0, thirds_rule_ratio=0.666):
     global vertical_bias
     frame_height, frame_width = frame.shape[:2]
     x, y, w, h = roi
@@ -107,15 +107,8 @@ def apply_cinematic_rules(frame, roi, ref_width_ratio=0.7, headroom_ratio=0, thi
 def main():
     global roi_selection_data, tracking_started, prev_roi, prev_frame, vertical_bias
 
-    #WebCam
-    #cap = cv2.VideoCapture(0)
-    #ret, frame = cap.read()
-
-    #Video File
-    video_path = '/Users/zap/Desktop/CAM3.mp4'
-    cap = cv2.VideoCapture(video_path)
+    cap = cv2.VideoCapture(0)
     ret, frame = cap.read()
-    #
 
     if not ret:
         print("No suitable camera device found.")
