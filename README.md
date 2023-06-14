@@ -26,11 +26,11 @@ python main.py
 
 ## Functionality
 
-Once started, the script will open a window displaying the webcam feed. 
+Once started, the script will open a window displaying the webcam or any video capture device feed. 
 
 To start tracking an object (or face), left-click and drag the mouse to draw a rectangle around the object. When you release the mouse button, the tracker will initialize and start to track the object. 
 
-While tracking, the script also applies cinematic composition rules (like the rule of thirds) to guide the camera framing, if possible. It will draw a red rectangle around the tracked object and a blue rectangle to represent the ideal framing.
+While tracking, the script also applies cinematic composition rules (like the rule of thirds) to guide the camera framing, if possible. It will draw a red rectangle around the tracked object and a blue rectangle to represent the ideal framing and open a second window that show the framing.
 
 You can stop tracking by clicking on the feed.
 
