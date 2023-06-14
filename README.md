@@ -1,6 +1,6 @@
 # Video stream ROI Tracking with basic Cinematic Composition Rules
 
-This project is a Python-based implementation of real-time face tracking using OpenCV, dlib, and numpy. It leverages the cinematic composition rules to determine the region of interest in the video stream. This program is suitable for tracking a face within a video or through a webcam in real-time.
+This project is a basic Python-based implementation of real-time tracking using OpenCV, dlib, and numpy. It leverages the cinematic composition rules to determine the region of interest in the video stream. This program is suitable for tracking a persone within a video or through a webcam in real-time.
 
 ## Requirements
 
